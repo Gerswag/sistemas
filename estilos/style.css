@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body { 
+    background-color: rgb(87, 84, 84);
+    font-family: 'Dosis', sans-serif;
+    margin: 0;
+}
+header{
+    display: flex;
+    height: 75px;
+    background-color: rgb(41, 41, 41);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+#aprende{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(/Codigo/images/portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#aprende h1{
+    font-size: 5.5em;
+    color: aliceblue;
+}
+
+#about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(/Codigo/images/portadaboutus.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#about h1{
+    font-size: 5.5em;
+    color: #ffffff;
+}
+.products{
+    width: 100%;
+    margin:0% auto;
+    min-height: 100vh;
+    padding: 80px 20px;
+    display: grid;
+    gap: 5px;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-rows:repeat(2,1fr);
+    align-items: center;
+    grid-template-areas:
+    "Card 1  .  Card2 " ;
+}
+.products img{
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-bottom: 25px;
+    margin-right: 25px;
+    border-radius: 12px ;
+}
+.products p {
+    color: #fff;
+}
+.products h1{
+    color: #55acee;
+}
+.title1 h1{
+    color: #fff;
+    text-align: center;
+    font-size: 2.8em;
+}
+#curses .title1{
+    font-size: 3.1em;
+    text-align: justify;
+    color: #000;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.characters {
+    width: 100%;
+    margin:0% auto;
+    min-height: 20vh;
+    padding: 80px 20px;
+    display: grid;
+    gap: 5px;
+    grid-template-rows: repeat(1,1fr);
+    align-items: center;
+    grid-template-areas:
+    "Card 1  .  Card2 " ;
+}
+.characters h1{
+    font-size: 2.5em;
+    color: antiquewhite;
+
+}
+.characters p{
+    font-size: 1.5em;
+    text-align: justify;
+    color: antiquewhite;
+    margin-right: 15px;
+}
+.characters img{
+    width: 350px;
+    height: 350px;
+    float: left;
+    margin-bottom: 25px;
+    margin-right: 25px;
+    border-radius: 15px ;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    padding:15px;
+    color: #fff;
+
+}
+
+.logo img{
+    height: 65px;
+    margin-right: 15px;
+    border-radius: 15px;
+}
+nav a{
+     font-weight: 600;
+     padding: 8px;
+     text-decoration: none;
+     color: #696969;
+     border-radius: 8px;
+}
+     
+nav a:hover{
+    background-color: hwb(0 32% 63% / 0.452);
+    color: #fff;
+}
+
+#nuestros-programas{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#nuestros-programas .linkvideos{
+    margin-top: 0;
+    font-size: 8.2em;
+    text-decoration: none;
+    color: #ffffff;
+}
+h3{
+    color: rgb(255, 255, 255);
+    size: 15cm;
+}
+
+#nuestros-programas h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+.cuadro{
+    display: inline-block;
+    padding: 15px;
+}
+
+#nuestros-programas .cuadro{
+    background-position: center center;
+    background-size: cover;
+    padding: 45px 50px;
+    margin: 22px;
+    border-radius: 15px;
+}
+.botoncito{
+    background-color: #fff;
+    margin: 0%;
+    border-radius: 12px;
+    padding: 5px 5px;
+}
+.cuadro:first-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/Codigo/images/children.jpg");
+}
+.cuadro:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/Codigo/images/teacher.jpg");
+}
+.cuadro:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/Codigo/images/menestudying.jpg");
+}
+#quienes h2{
+    text-align: center;
+    font-size: 4.2em;
+    background-color: rgb(41, 41, 41);
+    color: black;
+}
+#quienes p{
+    justify-content: center;
+    font-size: 3.2em;
+}
+.quienessomos h1{
+    text-align: center;
+    margin-top: 0;
+    font-size: 3.2em;
+    color: #fff;
+}
+.somos {  
+text-align: center;
+font-size: 35px;
+}
+#caracteristicas h3{
+    text-align: center;
+    font-size: 3.2em;
+    color: #fff;
+}
+#caracteristicas h2{
+    text-align: left;
+    font-size: 2.5em;
+    color:#fff;
+
+}
+#caracteristicas div{
+    font-size: 1.5em;
+    text-align: justify;
+    color: antiquewhite;
+    margin-right: 15px;
+    margin-left: 40px;
+
+}
+:root{
+    --facebook:#3b5999;
+    --insta:#e4405f;
+    --twitter:#55acee;
+}
+.redes_container{
+    display: flex;
+    height: 10vh;
+    align-items: left;
+    justify-content: left;
+}
+.redes_container ul {
+    list-style-type: none;
+  }
+  
+.redes_container  li {
+    background-color: #fff;
+    float: left;
+    margin-right: 20px;
+    padding: 0 15px;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+#us h1{
+    color: #ffffff;
+    text-align: center;
+    padding: 0%;
+    font-size: 4.5em;
+}
+#us p{
+    color: antiquewhite;
+    text-align: justify;
+    padding: 25px 25px;
+    height: 15px;
+    font-size: 2.5em;
+}
