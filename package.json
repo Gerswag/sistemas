@@ -1,0 +1,27 @@
+{
+  "name": "Sistemas",
+  "version": "1.0.0",
+  "description": "Sistemas website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node ./scripts/create-env.js && webpack --mode production --config webpack.config.js",
+    "dev": "webpack --config webpack.config.dev.js",
+    "build:watch": "webpack --watch --config webpack.config.dev.js",
+    "start": "webpack serve --config webpack.config.dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gerswag.github.io/Sistemas/"
+  },
+  "keywords": [
+    "html",
+    "css"
+  ],
+  "author": "Gerardo Ventura <gerardo.ventura@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gerswag.github.io/Sistemas/"
+  },
+  "homepage": "https://gerswag.github.io/Sistemas/"
+}
