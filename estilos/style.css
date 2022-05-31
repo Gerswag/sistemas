@@ -50,7 +50,7 @@ header{
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 90vh;
+    height: 100vh;
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
@@ -89,7 +89,7 @@ header{
 }
 .products{
     width: 100%;
-    margin:0% auto;
+    margin:0;
     min-height: 100vh;
     padding: 80px 20px;
     display: grid;
@@ -100,6 +100,12 @@ header{
     grid-template-areas:
     "Card 1  .  Card2 " ;
 }
+
+.products div {
+    height: 100%;
+    width: 100%;
+}
+
 .products img{
     width: 200px;
     height: 200px;
@@ -138,6 +144,12 @@ header{
     grid-template-areas:
     "Card 1  .  Card2 " ;
 }
+
+.characters div {
+    height: 100%;
+    width: 100%;
+}
+
 .characters h1{
     font-size: 2.5em;
     color: antiquewhite;
@@ -188,6 +200,10 @@ nav a:hover{
     background-color: rgb(30,30,30);
     color: white;
     text-align: center;
+}
+
+.programas {
+    padding-bottom: 20px;
 }
 
 #nuestros-programas .linkvideos{
@@ -268,6 +284,11 @@ h3{
 text-align: center;
 font-size: 35px;
 }
+
+#caracteristicas {
+    margin-left: 50px;
+}
+
 #caracteristicas h3{
     text-align: center;
     font-size: 3.2em;
@@ -322,4 +343,10 @@ font-size: 35px;
     padding: 25px 25px;
     height: 15px;
     font-size: 2.5em;
+    height: 300px;
+}
+
+#contactanos {
+    margin-top: 20px;
+    margin-left: 50px;
 }
